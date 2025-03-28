@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-cyan-200 via-purple-400 to-rose-200 min-h-screen flex text-gray-900">
+    
+    <div class="flex-1 mx-16 my-12 bg-white/40 rounded-3xl backdrop-blur-sm rounded-3x1 shadow-x1 flex">
+    <!-- Sidebar Izquierdo -->
+    <aside class="w-1/5 bg-none  p-16 rounded-3xl shadow-md">
+        <h1 class="text-4xl font-bold mb-16 mb-8">edu</h1>
+        <nav class="mt-16 space-y-4">
+            <a href="" class="block p-2 rounded-lg font-bold hover:bg-purple-100">Schedule</a>
+            <a href="" class="block p-2 rounded-lg font-bold hover:bg-purple-100">Progress</a>
+            <a href="" class="block p-2 rounded-lg font-bold hover:bg-purple-100">Messages</a>
+            <a href="" class="block p-2 rounded-lg font-bold hover:bg-purple-100">Settings</a>
+        </nav>
+        <a href="#" class="font-bold absolute bottom-16 left-16  block mt-16 text-gray-500"> Log out</a>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="flex-1 p-12 bg-neutral-50 my-6 rounded-3x1">
+        <!-- Banner -->
+        <input 
+        type="text" 
+        placeholder="Search" 
+        class="my-6 w-full py-3 pl-10 pr-4 rounded-full border focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+      >
+        <div class="bg-slate-900 text-white p-12 rounded-2xl shadow-lg  h-64">
+            <h2 class="text-5xl font-bold text-right mb-3">Effective education!</h2>
+            <p class="text-sm text-right">Learning is easy and effective with us. Open the panel and watch your progress.</p>
+        </div>
+
+        <!-- Eventos -->
+        <section class="mt-6">
+            <h3 class="text-xl font-bold mb-3">Events</h3>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <p class="text-gray-500">26.02</p>
+                    <h4 class="font-bold">UX/UI Workshop</h4>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <p class="text-gray-500">02.03</p>
+                    <h4 class="font-bold">English Lecture</h4>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <p class="text-gray-500">07.03</p>
+                    <h4 class="font-bold">Business Lecture</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gráfica de Progreso (simulada) -->
+        <section class="mt-6">
+            <h3 class="text-xl font-bold mb-3"> Timing & Progress</h3>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-gray-500">Computer Science: <span class="font-bold">37%</span></p>
+                <div class="w-full bg-gray-200 h-2 rounded-md">
+                    <div class="bg-blue-500 h-2 rounded-md w-1/3"></div>
+                </div>
+                <p class="text-gray-500 mt-2">Science: <span class="font-bold">38%</span></p>
+                <div class="w-full bg-gray-200 h-2 rounded-md">
+                    <div class="bg-green-500 h-2 rounded-md w-2/5"></div>
+                </div>
+                <p class="text-gray-500 mt-2">Business: <span class="font-bold">51%</span></p>
+                <div class="w-full bg-gray-200 h-2 rounded-md">
+                    <div class="bg-yellow-500 h-2 rounded-md w-1/2"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sidebar Derecho -->
+    <aside class="w-1/5 bg-white p-12 pt-24 rounded-r-3xl shadow-2x1 my-6 mr-6">
+        <h3 class=" font-bold mb-2">Your Courses</h3>
+        <ul class="mt-12 space-y-5 ">
+            <li class="p-6 p-2 bg-white text-xl shadow-md rounded-lg h-16 font-bold ">Art </li>
+            <li class="p-6 p-2 bg-white text-xl shadow-md rounded-lg h-16 font-bold ">Business </li>
+            <li class="p-6 p-2 bg-white text-xl shadow-md rounded-lg h-16 font-bold ">Science </li>
+            <li class="p-6 p-2 bg-white text-xl shadow-md rounded-lg h-16 font-bold ">Mathematics </li>
+        </ul>
+        <div class="bg-slate-900 rounded-3xl h-56 relative mt-6"> <!-- Contenedor padre con posición relativa -->
+           
+            <button class="absolute bottom-4 right-4 text-white py-2 px-6 rounded-lg shadow-md transition-colors">
+              Upgrade to Premium ->
+            </button>
+          </div>
+        
+    </aside>
+    </div>
+</body>
+</html>
