@@ -9,13 +9,14 @@
     <style>
         body {
             font-family: 'Comic Neue', cursive;
-            background-color: #f9d5e5;
+            background-color: #9bd991;
             color: #6b5b95;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #ff9aa2;
+            
+            background-color: #64bb76;
             padding: 20px;
             text-align: center;
             font-family: 'Pacifico', cursive;
@@ -23,34 +24,56 @@
             color: white;
         }
         nav {
-            background-color: #ffb7b2;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #6b5b95;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; /* Espacio entre elementos */
+    background-color: #e7ee98;
+    padding: 40px;
+    height: auto; /* Ajusta la altura automáticamente */
+    flex-wrap: wrap; /* Permite que los enlaces bajen si no caben */
+    border-radius: 20px;
+}
+
+nav a {
+    color: #6b5b95;
+    text-decoration: none;
+    font-weight: bold;
+    background: white;
+    padding: 24px 40px; /* Espacio interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.3s ease-in-out;
+    font-size: 1.5em; /* Tamaño de letra más grande */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width: 200px; /* Ancho de cada botón */
+}
+
+nav a:hover {
+    background-color: #64bb76; 
+    color: white;
+    transform: scale(1.1); /* Efecto de agrandar al pasar el mouse */
+}
+
         main {
             padding: 20px;
         }
         section {
             background-color: #e2f0cb;
-            padding: 15px;
+            padding: 25px;
             margin-bottom: 20px;
             border-radius: 10px;
         }
         footer {
-            background-color: #ff9aa2;
+            background-color: #64bb76;
             text-align: center;
             padding: 10px;
             color: white;
             font-family: 'Pacifico', cursive;
         }
         h1, h2, h3, h4, h5, h6 {
-            color: #ff6f61;
+            color: #e7ee98;
         }
         img {
             max-width: 100%;
@@ -82,7 +105,7 @@
             width: 100%;
         }
         button {
-            background-color: #ff6f61;
+            background-color: #e7ee98;
             color: white;
             font-weight: bold;
         }
@@ -101,16 +124,17 @@
     <header>
         <h1>Bienvenido a mi portafolio</h1>
     </header>
-    <nav>
-        <a href="contenedor.html">  Login</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="layout.html">Layout</a>
-        <a href="Producto.html">Audífonos</a>
-    </nav>
+    
     <main>
         <section id="Inicio">
             <h2>¡Hola, Mundo </h2>
-            <p>Esta es una página con estilo <span>cute harajuku</span>, llena de colores pastel y elementos divertidos.</p>
+            <nav>
+                <a href="contenedor.html">  Login</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="layout.html">Layout</a>
+                <a href="Producto.html">Audífonos</a>
+            </nav>
+            <p>Bienvenido a mi portafolio<span></span>, Programación web.</p>
             <p>¡Disfruta explorando!</p>
             <br>
             <hr>
